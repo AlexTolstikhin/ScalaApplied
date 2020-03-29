@@ -1,0 +1,2 @@
+# alex-ascendify.com
+ScalaApplied
