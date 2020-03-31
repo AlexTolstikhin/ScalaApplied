@@ -21,6 +21,7 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
     @tailrec
     def max(numbers: List[Int]):Int = {
         if (numbers.size > 1 && numbers.head <= numbers.tail.max) max(numbers.tail)
+        else if (numbers.isEmpty) Int.MinValue
         else numbers.head
     }
 
