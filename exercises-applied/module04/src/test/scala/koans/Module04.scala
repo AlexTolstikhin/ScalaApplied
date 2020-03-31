@@ -8,6 +8,8 @@ import support.BlankValues._
 import support.KoanSuite
 import java.io.{BufferedReader, FileReader}
 
+import scala.annotation.tailrec
+
 class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
 
   test ("Refactoring var to val") {
@@ -16,14 +18,10 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
     // to use a var but still pass the tests
     //
     // Hint: maybe recursion? List.head will give you the first value, List.tail will give you the rest
-
-    def max(numbers : List[Int]) = {
-      var maxSoFar = Int.MinValue
-
-      for (n <- numbers) {
-        if (n > maxSoFar) maxSoFar = n
-      }
-      maxSoFar
+    @tailrec
+    def max(numbers: List[Int]):Int = {
+        if (numbers.size > 1 && numbers.head <= numbers.tail.max) max(numbers.tail)
+        else numbers.head
     }
 
     max(List(1, 2, 3, 4, 5)) should be (5)
