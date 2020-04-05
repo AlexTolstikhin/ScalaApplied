@@ -6,9 +6,11 @@ import org.scalatest.Matchers
 import org.scalatest.SeveredStackTraces
 import support.BlankValues._
 import support.KoanSuite
-import java.io.{BufferedReader, FileReader}
+import java.io.{BufferedReader, File, FileNotFoundException, FileReader}
 
 import scala.annotation.tailrec
+import scala.collection.mutable
+import scala.io.Source
 
 class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
 
@@ -39,7 +41,11 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
     val fileList = (new java.io.File(dirPath)).listFiles
 
     // you need to replace this line with the real implementation
-    new Array[String](0)
+    val result = for(a: File <- fileList
+        if(a.getName.split("\\.").last == "shkspr")
+        ) yield a.getName
+
+    result
   }
   // question: can you guess why we define this method outside of the test below?
 
@@ -56,7 +62,14 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
   // what you need
   def firstLineOfFile(filePath: String) : String = {
     // replace with the real implementation
-    ""
+    val bufferedSource = Source.fromFile(filePath)
+    try {
+      bufferedSource.getLines().find(_ => true).get
+    } catch {
+      case e: FileNotFoundException => "Failed"
+    } finally {
+      bufferedSource.close()
+    }
   }
 
   test ("First line of file") {
@@ -72,8 +85,8 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
   // finish this method so that the string is first trimmed (get rid of leading and trailing space)
   // and then the last character is matched to either a '?' ("Question") or anything else ("Statement")
   // so that the test below passes
-  def statementOrQuestion(str : String) : String = 
-    str
+  def statementOrQuestion(str : String) : String =
+    if (str.trim().takeRight(1) == "?") "Question" else "Statement"
 
   test ("statement or question?") {
     statementOrQuestion("hello") should be ("Statement")
@@ -97,7 +110,13 @@ class Module04 extends KoanSuite with Matchers with SeveredStackTraces {
     // extra extra credit - can you find a way to do it without using either a var or a mutable Map?
     //var shksprMap = new scala.collection.immutable.HashMap[String, String]
 
-    val shksprMap = new scala.collection.immutable.HashMap[String, String]
+
+    val shksprMap = {
+      for {
+        file <- listShakespeareFiles(".")
+        ehh = statementOrQuestion(firstLineOfFile(file))
+      } yield file -> ehh
+    }.toMap
 
     shksprMap("caesar.shkspr") should be ("Statement")
     shksprMap("romeo.shkspr") should be ("Question")
