@@ -5,10 +5,15 @@ package koans
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
+
 import org.scalatest.Matchers
 import org.scalatest.SeveredStackTraces
 import support.BlankValues._
 import support.KoanSuite
+
+import scala.annotation.tailrec
+import scala.io.Source
+import scala.runtime.Nothing$
 
 class Module06 extends KoanSuite with Matchers with SeveredStackTraces {
 
@@ -17,8 +22,8 @@ class Module06 extends KoanSuite with Matchers with SeveredStackTraces {
     // odd numbers (for the first functions) and even numbers (for the second function) so that the
     // tests pass
 
-    def containsOdd(nums: List[Int]): Boolean = true
-    def containsEven(nums: List[Int]): Boolean = true
+    def containsOdd(nums: List[Int]): Boolean = if (nums == Nil) false else if (nums.head % 2 != 0) true else containsOdd(nums.tail)
+    def containsEven(nums: List[Int]): Boolean = if (nums == Nil) false else if (nums.head % 2 == 0) true else containsEven(nums.tail)
 
     containsOdd(List(2,4,6)) should be (false)
     containsEven(List(1,3,5)) should be (false)
@@ -39,13 +44,24 @@ class Module06 extends KoanSuite with Matchers with SeveredStackTraces {
     // Hint - to make the tests pass, you might need to clean up the string that is read in from the file,
     // try .trim()
 
-    /* val palindrome = withFileContents("quote.txt") { str => str.reverse }
+     def withFileContents[A](filePath: String)(filter: String => A): A = {
+       val openFile = Source.fromFile(filePath)
+       try {
+         openFile.getLines().toSeq.headOption.map {
+           line => filter(line)
+         }.get
+       } finally {
+         openFile.close()
+       }
+     }
+
+    val palindrome = withFileContents("quote.txt") { str => str.reverse }
     palindrome should be ("Madam, I'm Adam")
 
     val total = withFileContents("sum.txt") { str =>
       str.split(",").map(_.toInt).reduceLeft(_ + _).toString   // make sure to understand what this is doing
     }
-    total should be ("20") */
+    total should be ("20")
   }
 
   test ("onlyIfTrue - your own predicate guard") {
@@ -54,13 +70,18 @@ class Module06 extends KoanSuite with Matchers with SeveredStackTraces {
     // is true, otherwise do nothing. For now, assume that the operation takes no arguments and has no
     // return (Unit).
 
+    def onlyIfTrue(pred: => Boolean)(externalVar: => Unit): Unit = {
+        if (pred) externalVar
+    }
 
-    /* val numList = List (-1, 0, -2, 3, -4, 5)
+    val numList = List (-1, 0, -2, 3, -4, 5)
     var numberBelowZero = 0
 
     numList.foreach { n => onlyIfTrue(n < 0) {numberBelowZero += 1 } }
 
-    numberBelowZero should be (3) */
+    println(numList.count(item => item < 0))
+    println(numList.filterNot(item => item < 0).size)
+    numberBelowZero should be (3)
   }
 
   // extra credit - the above exercise is only present to get you used to by-name and curried functions
