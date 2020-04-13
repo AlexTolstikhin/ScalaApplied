@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f44fa021-6d63-4bfc-bfca-6f5b4b267a7f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZowGbT1hA8xwHIG3oQtGzpkMdo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scala_apply_1" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2938296" />
+  </component>
+  <component name="RunManager" selected="ScalaTest.Module06.onlyIfTrue - your own predicate guard">
+    <configuration name="Module05.Opposites matcher" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="module05" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="koans.Module05" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module05.URL cleaner" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="module05" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="koans.Module05" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module06.Detect any odds/evens in a list" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="module06" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="koans.Module06" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module06.With file contents control structure" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="module06" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="koans.Module06" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module06.onlyIfTrue - your own predicate guard" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="module06" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="koans.Module06" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.Module06.onlyIfTrue - your own predicate guard" />
+        <item itemvalue="ScalaTest.Module06.With file contents control structure" />
+        <item itemvalue="ScalaTest.Module06.Detect any odds/evens in a list" />
+        <item itemvalue="ScalaTest.Module05.Opposites matcher" />
+        <item itemvalue="ScalaTest.Module05.URL cleaner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="2383530783" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1992519366" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../../code/alex.ascendify.net/capability_service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../../code/alex.ascendify.net/scheduling" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f44fa021-6d63-4bfc-bfca-6f5b4b267a7f" name="Default Changelist" comment="" />
+      <created>1585518659569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585518659569</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="127" width="1720" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585531734846">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="127" width="1720" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585531734846" />
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1586277432152">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586277432152" />
+    <state width="1872" height="345" key="GridCell.Tab.0.bottom" timestamp="1586150875085">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="345" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586150875085" />
+    <state width="1868" height="348" key="GridCell.Tab.0.bottom/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585585470173" />
+    <state width="1876" height="335" key="GridCell.Tab.0.bottom/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585714753801" />
+    <state width="1876" height="335" key="GridCell.Tab.0.bottom/0.27.960.513/1920.0.800.450/960.0.960.540@0.27.960.513" timestamp="1585718368503" />
+    <state width="1872" height="345" key="GridCell.Tab.0.center" timestamp="1586150875085">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="345" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586150875085" />
+    <state width="1868" height="348" key="GridCell.Tab.0.center/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585585470173" />
+    <state width="1876" height="335" key="GridCell.Tab.0.center/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585714753801" />
+    <state width="1876" height="335" key="GridCell.Tab.0.center/0.27.960.513/1920.0.800.450/960.0.960.540@0.27.960.513" timestamp="1585718368503" />
+    <state width="1872" height="345" key="GridCell.Tab.0.left" timestamp="1586150875085">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="345" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586150875085" />
+    <state width="1868" height="348" key="GridCell.Tab.0.left/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585585470173" />
+    <state width="1876" height="335" key="GridCell.Tab.0.left/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585714753801" />
+    <state width="1876" height="335" key="GridCell.Tab.0.left/0.27.960.513/1920.0.800.450/960.0.960.540@0.27.960.513" timestamp="1585718368503" />
+    <state width="1872" height="345" key="GridCell.Tab.0.right" timestamp="1586150875085">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="345" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586150875085" />
+    <state width="1868" height="348" key="GridCell.Tab.0.right/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585585470173" />
+    <state width="1876" height="335" key="GridCell.Tab.0.right/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585714753801" />
+    <state width="1876" height="335" key="GridCell.Tab.0.right/0.27.960.513/1920.0.800.450/960.0.960.540@0.27.960.513" timestamp="1585718368503" />
+    <state x="2139" y="212" width="1386" height="761" key="SettingsEditor" timestamp="1586132712357">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2139" y="212" width="1386" height="761" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586132712357" />
+    <state x="441" y="188" width="1037" height="737" key="SettingsEditor/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585523782806" />
+    <state x="2519" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586132276969">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2519" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586132276969" />
+    <state x="599" y="398" key="com.intellij.ide.util.TipDialog/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@0.27.1920.1053" timestamp="1585762343944" />
+    <state x="2519" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053/3840.0.1600.900/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585588269602" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/module02/src/test/scala/koans/Module02.scala</url>
+          <line>109</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
