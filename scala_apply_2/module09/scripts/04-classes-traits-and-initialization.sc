@@ -1,4 +1,4 @@
-class CoordsC(val x: Double, val y: Double) {
+ class CoordsC(val x: Double, val y: Double) {
   override def toString: String = s"($x, $y)"
   val distToOrigin: Double = math.sqrt((x * x) + (y * y))
 }
