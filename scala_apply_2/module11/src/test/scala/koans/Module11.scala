@@ -1,6 +1,6 @@
 package koans
 
-import java.io.File
+import java.io.{File, FileReader}
 import java.util.NoSuchElementException
 
 import org.scalamock.scalatest.MockFactory
@@ -11,14 +11,14 @@ import scala.io.BufferedSource
 
 class Module11 extends FunSpec with Matchers with MockFactory with PropertyChecks {
 
-  class FileReader(file: File) {
+  class FileReaders(file: File) {
     lazy private val source: BufferedSource = scala.io.Source.fromFile(file)
     lazy private val lines = source.getLines()
     def nextLine(): String = lines.next()
     def close(): Unit = source.close()
   }
 
-  def withFirstLineOfFile[A](fileReader: FileReader)(fn: String => A): A = {
+  def withFirstLineOfFile[A](fileReader: FileReaders)(fn: String => A): A = {
     try {
       fn(fileReader.nextLine())
     }
@@ -30,9 +30,14 @@ class Module11 extends FunSpec with Matchers with MockFactory with PropertyCheck
     // using Scalamock, mock the FileReader out and make it return "To be or not to be" on a nextLine call,
     // and just expects a single call to close() as well, then test by replacing ??? below with the mock
     // you made.
+    val mockFileReader: FileReaders = mock[FileReaders]
+
+
 
     it ("should call a function with the known contents of a file") {
-      val x = withFirstLineOfFile(???)(identity)
+      (mockFileReader.nextLine _).expects().returning("To be or not to be")
+      (mockFileReader.close _).expects().returning()
+      val x = withFirstLineOfFile(mockFileReader)(identity)
 
       x should be ("To be or not to be")
     }
@@ -42,8 +47,12 @@ class Module11 extends FunSpec with Matchers with MockFactory with PropertyCheck
     // again replace ??? with the mock you created
 
     it ("should always call close() on the file, even if the file is empty causing a NoSuchElementException") {
+      val exception = new NoSuchElementException("next on empty iterator")
+      (mockFileReader.nextLine _).expects().throwing(exception)
+      (mockFileReader.close _).expects().returning()
+
       val ex = intercept[NoSuchElementException] {
-        withFirstLineOfFile(???)(identity)
+        withFirstLineOfFile(mockFileReader)(identity)
       }
 
       ex.getMessage should be ("next on empty iterator")
@@ -72,7 +81,10 @@ class Module11 extends FunSpec with Matchers with MockFactory with PropertyCheck
     val validAlleles = Seq('A','C','G','T','-')
 
     // put generator definition (and supporting functionality) here
-    lazy val seqGen: Gen[String] = ???
+    val to: Gen[Int] = Gen.choose(0, 30)
+    lazy val seqGen: Gen[String] = for (a <- 0 until to) {
+
+    }
 
     it ("should return a ratio between 0.0 and 1.0 for any genetic sequence") {
       forAll(seqGen) { sequence =>
